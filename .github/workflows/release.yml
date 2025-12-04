@@ -1,9 +1,10 @@
 name: release to github
 
 on:
-  push:
-    tags:
-      - "v*.*.*"
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Version name (default is ref name)'
 
 jobs:
   create:
