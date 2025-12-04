@@ -6,6 +6,10 @@ on:
       name:
         description: 'Version name (default is ref name)'
 
+permissions:
+  contents: write
+  actions: write
+
 jobs:
   create:
     runs-on: ubuntu-latest
